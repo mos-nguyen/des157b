@@ -3,126 +3,164 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-
-/* Page styling */
 body {
-    background-color: #333;
-    color: rgb(235, 235, 235);
-    transition: all 2s;
+    background-color: #8a92a1;
+    background-image: url("images/on.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #141619;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    /* transition: all 1s; */
 }
 
 body.switch {
-    background-color: rgb(235, 235, 235);
-    color: #333;
-}
-
-#container {
-    position: relative;
-    width: 100%;
-    max-width: 1366px;
-    /* make sure the columns don't get too small and text stays readable */
-    min-width: 900px;
-    margin: 1em auto;
-    padding-top: 2em;
+    background-color: #181c3d;
+    background-image: url(images/off.svg);
+    overflow: hidden;
+    background-position: left -13px bottom 0px;
+    color: #fdfaf1;
+    font-family: "Baumans", system-ui;
+    
 }
 
 header {
-    margin: 0 auto 2em auto;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    font-size: 80%;
+}
+
+/* h1 {
+    font-family: "neonderthaw", sans-serif;
+} */
+
+button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 30px;
 }
 
 #banner {
-    position: relative;
-    display: flex;
-    width: 1100px;
-    height: 250px;
+    background-color: #fff5d5;
+    width: 90%;
+    height: 125px;
     margin: auto;
-    background-color: rgb(235, 235, 235);
-    color: #333;
-    overflow: hidden;
-    display: grid;
-	place-items: center;
-}
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #141619;
+    transition: all 1s;
+    font-family: "Limelight", sans-serif;
+    font-size: 115%;
+    border-radius: 80px;
+} 
 
 #banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
-    transition: all 2s;
+    background-color: #141619;
+    border-style: dotted;
+    border-width: 10px;
+    border-radius: 30px;
+    color: #fff5d5;
 }
+
+.secret {
+    color: #fff5d5;
+}
+/* WHEN LIGHTS TURN OFF MAKE IT SAY SMTHIUNG LIKE "HOME IS RIGHT HERE" */
 
 main {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1em auto;
+    height: 500px;
+    width: 95%;
+    margin: auto;
+    /* background-color: aliceblue; */
+    overflow: scroll;
 }
 
-main section {
-    flex: 1;
-    border: 1px rgb(235, 235, 235) dashed;
-    margin: 0 .25em;
-    padding: 1em;
+section {
+    width: 75%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(187, 230, 241, 0.588);
+    border-style: solid;
+    border-width: 5px;
+    border-color: #141619;
+    border-radius: 50px;
+    transition: all 1s;
+}
+
+section.switch {
+    background-color: #141619ae;
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #fff5d5;
+}
+
+section.switch a {
+    color: #fff5d5;
 }
 
 a {
     text-decoration: none;
+    color: #141619;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 nav ol, nav ul {
     list-style-type: none;
     margin-left: 0;
+    margin-top: 5px;
     padding-left: 0;
+    text-align: center;
 }
 
-section li {
-    padding-left: 1.2em;
+li {
+    margin-bottom: 10px;
+    transition: transform .5s;
 }
 
-section a {
-    line-height: 1.1em;
-    display: inline-block;
-    padding: .5em;
-    color: orange;
+li:hover {
+    transform: scale(1.2);
 }
 
-section a:hover {
-    background-color: orange;
-    color: #333;
-}
+@media only screen and (min-width: 500px) {
+    body {
+        background-position: right 20% bottom -50%;
+    }
+    
+    body.switch {
+        background-position: left 615px bottom -133px;
+    }
 
-section.switch a {
-    color: #333;
-}
+    main {
+        width: 65%;
+        display: flex;
+        margin-left: 60px;
+        height: 325px;
+        overflow: visible;
+    }
 
-section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
-}
-
-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 12px;
-    background-color: orange;
-    color: #333;
-    border: 1px solid transparent;
-}
-
-button:hover {
-    background-color: coral;
-    cursor: pointer;
-}
-
-button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
-}
-
-button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
+    section {
+        margin-right: 15px;
+    }
+    
+    #banner {
+        font-size: 200%;
+    }
 }

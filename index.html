@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Home is...DES 157B!</title>
@@ -8,7 +7,14 @@
     <!-- Normalize CSS for browser compatability -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-    <!-- Add link to any google fonts used here -->
+    <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+
 
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet">
@@ -18,31 +24,25 @@
 
     <!-- My Script -->
     <script src="script.js" defer></script>
-
-</head>
+</head> 
 
 <body>
+    <header>
+        <h1>Carol Nguyen</h1>
+        <h2>DES157B: Interactive Media III - Spring 2026 Section 2</h2>
 
-    <div id="container">
+        <button>ON/OFF</button>
+    </header>
 
-        <header>
+    <div id="banner">
+        <h2>Home Is...</h2>
+        <h2 class="secret">Right Here!</h2>
+    </div>
 
-            <h1>Carol Nguyen</h1>
+    <main>
 
-            <h2>DES 157B - Interactive Media III - (term, year & section)</h2>
-
-            <!--this is for the interactive banner-->
-            <div id="banner">
-                <h3>This is my banner!</h3>
-            </div>
-
-        </header>
-
-        <main>
-
-            <section id="projects">
-
-                <h3>Ministudios</h3>
+        <section>
+            <h3>Ministudios</h3>
                 <nav>
                     <ol>
                         <li><a href="#">Blockbuster Video</a></li>
@@ -50,6 +50,7 @@
                         <li><a href="#">Library Liberty</a></li>
                     </ol>
                 </nav>
+
                 <h3>Toolkit</h3>
                 <nav>
                     <ol>
@@ -57,10 +58,10 @@
                     </ol>
                 </nav>
 
-            </section>
+        </section>
 
-            <section id="research">
-                <h3>Research</h3>
+        <section>
+            <h3>Research</h3>
                 <nav>
                     <ul>
                         <li><a href="#">Brainstorm</a></li>
@@ -70,11 +71,10 @@
                         <li><a href="#">Usability Results</a></li>
                     </ul>
                 </nav>
+        </section>
 
-            </section>
-
-            <section id="development">
-                <h3>Development</h3>
+        <section>
+            <h3>Development</h3>
                 <nav>
                     <ul>
                         <li><a href="#">Proposal</a></li>
@@ -87,23 +87,19 @@
                         <li><a href="#">Version 2</a></li>
                     </ul>
                 </nav>
-            </section>
+        </section>
 
-            <section id="capstone">
-                <h3>Capstone</h3>
+        <section>
+            <h3>Capstone</h3>
                 <nav>
                     <ul>
                         <li><a href="#">Case Study</a></li>
                         <li><a href="#">Project</a></li>
                     </ul>
                 </nav>
-            </section>
+        </section>
 
-            <button>switch</button>
-
-        </main>
-
-    </div>
+    </main>
 
 </body>
 
