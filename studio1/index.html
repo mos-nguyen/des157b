@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockbuster Video!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap" rel="stylesheet">
+    <!-- font-family: "Be Vietnam Pro", sans-serif; -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN+Guides&display=swap" rel="stylesheet">
+    <!-- font-family: "Playwrite VN Guides", cursive; -->
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <video id="vietVideo" poster="images/thumbnail.png" muted autoplay loop playsinline>
+        <source src="media/vietTrip.webm" type="video/webm">
+        <source src="media/vietTrip.mp4" type="video/mp4">
+        <p>Whoops! looks like your browser doesnt support HTML5 video. <a href="media/vietTrip.mp4">CLick Here</a> for a link to the video instead! </p>
+    </video>
+
+    <!-- <i class="fas fa-ship"></i>
+     for loading screen -->
+
+    <nav>
+        <i class="fas fa-expand"></i>
+        <i class="fas fa-circle-play"></i>
+        <i class="fas fa-volume-xmark"></i>
+        <i class="fas fa-door-closed"></i> 
+        <!-- change it to door open when hovering over -->
+    </nav>
+
+    <section id="english">
+        <p id="first">This will be the first sentence to show up, explaining that hovering will change text to english.</p>
+        <p id="second">Here is the second text, giving a bit more context as to what the video is of.</p>
+        <p id="third">The third text box will contain my thoughts about my trip in vietnam.</p>
+        <p id="fourth">This fourth text box will have another bit of information or thoughts I have to share about the video.</p>
+        <p id="fifth">This will thank the viewer for watching and participating.</p>
+    </section>
+
+    <section id="vietnamese" class="hidden">
+        <p id="firstV">Đây sẽ là câu đầu tiên xuất hiện, giải thích rằng việc di chuột qua sẽ chuyển văn bản sang tiếng Anh.</p>
+        <p id="secondV">Đây là đoạn văn bản thứ hai, cung cấp thêm một chút bối cảnh về nội dung của video.</p>
+        <p id="thirdV">Hộp văn bản thứ ba sẽ chứa những suy nghĩ của tôi về chuyến đi tại Việt Nam.</p>
+        <p id="fourthV">Hộp văn bản thứ tư này sẽ chứa thêm một chút thông tin hoặc những suy nghĩ khác mà tôi muốn chia sẻ về video.</p>
+        <p id="fifthV">Điều này sẽ gửi lời cảm ơn đến người xem vì đã theo dõi và tham gia.</p>
+    </section>
+    
+</body>
+
+</html>

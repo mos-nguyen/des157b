@@ -1,0 +1,68 @@
+#vietVideo {
+    position: fixed; 
+    right: 0; 
+    bottom: 0; 
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.fa-ship {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    color: aliceblue;
+    transform: translate(-50%, -50%);
+    animation: boat 2s infinite alternate ease-in-out;
+}
+
+@keyframes boat {
+    0% {
+        translate: 0 0px;
+    }
+
+    50% {
+        translate: 0 20px;
+    }
+
+    100% {
+        translate: 0 0px;
+    }
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.652);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85px;
+    height: 300px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.fa-expand, .fa-circle-play, .fa-volume-xmark, .fa-door-closed {
+    position: absolute; 
+    font-size: 50px;
+    color: rgba(240, 248, 255, 0.536);
+}
+
+.fa-expand:hover, .fa-circle-play:hover, .fa-volume-xmark:hover, .fa-door-closed:hover {cursor: pointer;}
+
+.fa-expand {top: 10px; right: 20px;}
+.fa-circle-play {top: 80px; right: 18px;}
+.fa-volume-xmark {top: 150px; right: 12px;}
+.fa-door-closed {top: 220px; right: 15px;}
+
+section {position: absolute; background-color: rgba(255, 255, 255, 0.7);}
+#first, #firstV {top: 10%; left: 10%;}
+#second, #secondV {top: 10%; right: 10%;}
+#third, #thirdV {bottom: 10%; right: 10%;}
+#fourth, #fourthV {bottom: 10%; left: 10%;}
+#fifth, #fifthV {top: 50%; left: 50%;}
+.hidden {opacity: 0;}
+.showing {opacity: 1;}
+
+p {
+    font-size: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
