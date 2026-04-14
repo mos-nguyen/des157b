@@ -10,7 +10,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 40px;
+    font-size: 50px;
     color: aliceblue;
     transform: translate(-50%, -50%);
     animation: boat 2s infinite alternate ease-in-out;
@@ -33,36 +33,54 @@
 nav {
     background-color: rgba(0, 0, 0, 0.652);
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translate(-0%, -50%);
     right: 0;
     width: 85px;
     height: 300px;
-    border-radius: 0px 0px 0px 20px;
+    border-radius: 20px 0px 0px 20px;
 }
 
-.fa-expand, .fa-circle-play, .fa-volume-xmark, .fa-door-closed {
+.fa-expand, .fa-circle-play, .fa-volume-xmark, .fa-door-closed, .fa-angle-left {
     position: absolute; 
     font-size: 50px;
-    color: rgba(240, 248, 255, 0.536);
+    color: rgba(240, 248, 255, 0.691);
 }
 
-.fa-expand:hover, .fa-circle-play:hover, .fa-volume-xmark:hover, .fa-door-closed:hover {cursor: pointer;}
+.fa-expand:hover, .fa-circle-play:hover, .fa-volume-xmark:hover, .fa-door-closed:hover, .fa-angle-left {cursor: pointer;}
 
 .fa-expand {top: 10px; right: 20px;}
 .fa-circle-play {top: 80px; right: 18px;}
 .fa-volume-xmark {top: 150px; right: 12px;}
 .fa-door-closed {top: 220px; right: 15px;}
 
-section {position: absolute; background-color: rgba(255, 255, 255, 0.7);}
-#first, #firstV {top: 10%; left: 10%;}
-#second, #secondV {top: 10%; right: 10%;}
-#third, #thirdV {bottom: 10%; right: 10%;}
-#fourth, #fourthV {bottom: 10%; left: 10%;}
-#fifth, #fifthV {top: 50%; left: 50%;}
-.hidden {opacity: 0;}
-.showing {opacity: 1;}
+.fa-angle-left {
+    top: 50%; 
+    right: 90%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.652);
+    
+}
 
-p {
+#first, #firstV, #second, #secondV, #third, #thirdV, #fourth, #fourthV, #fifth, #fifthV {
+    background-color: rgba(177, 219, 255, 0.8);
+    width: 35%;
+    height: 100px;
+    padding: 15px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0px;
+    border-radius: 20px;
     font-size: 20px;
     font-family: "Be Vietnam Pro", sans-serif;
+    position: absolute;
 }
+
+#first, #firstV { top: 2%; left: 2%; }
+#second, #secondV { top: 2%; right: 2%; }
+#third, #thirdV { bottom: 2%; right: 2%; }
+#fourth, #fourthV { bottom: 2%; left: 2%; }
+#fifth, #fifthV {top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.hidden {opacity: 0;}
+.showing {opacity: 1;}
