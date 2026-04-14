@@ -16,6 +16,10 @@
     animation: boat 2s infinite alternate ease-in-out;
 }
 
+.load {
+    position: absolute;
+}
+
 @keyframes boat {
     0% {
         translate: 0 0px;
@@ -59,7 +63,7 @@ nav {
     right: 90%; 
     transform: translate(-50%, -50%); 
     background-color: rgba(0, 0, 0, 0.652);
-    
+
 }
 
 #first, #firstV, #second, #secondV, #third, #thirdV, #fourth, #fourthV, #fifth, #fifthV {
