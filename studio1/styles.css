@@ -16,9 +16,9 @@
     animation: boat 2s infinite alternate ease-in-out;
 }
 
-.load {
+/* .load {
     position: absolute;
-}
+} */
 
 @keyframes boat {
     0% {
@@ -45,26 +45,30 @@ nav {
     border-radius: 20px 0px 0px 20px;
 }
 
-.fa-expand, .fa-circle-play, .fa-volume-xmark, .fa-door-closed, .fa-angle-left {
-    position: absolute; 
-    font-size: 50px;
-    color: rgba(240, 248, 255, 0.691);
+ul {
+    list-style-type: none;
 }
 
-.fa-expand:hover, .fa-circle-play:hover, .fa-volume-xmark:hover, .fa-door-closed:hover, .fa-angle-left {cursor: pointer;}
+.fa-expand, .fa-compress, .fa-circle-play, .fa-pause, .fa-volume-xmark, .fa-volume-high, .fa-door-closed, .fa-door-open, .fa-angle-left {
+    position: absolute; 
+    font-size: 50px;
+    color: rgba(240, 248, 255, 0.33);
+}
 
-.fa-expand {top: 10px; right: 20px;}
+.fa-expand:hover, .fa-compress:hover, .fa-circle-play:hover, .fa-pause:hover, .fa-volume-xmark:hover, .fa-volume-high:hover, .fa-door-closed:hover, .fa-door-open, .fa-angle-left {cursor: pointer; color: rgba(240, 248, 255, 0.755); scale: 130%;}
+
+.fa-expand, .fa-compress {top: 10px; right: 20px;}
 .fa-circle-play {top: 80px; right: 18px;}
-.fa-volume-xmark {top: 150px; right: 12px;}
-.fa-door-closed {top: 220px; right: 15px;}
+.fa-pause {top: 80px; right: 25px;}
+.fa-volume-xmark, .fa-volume-high {top: 150px; right: 12px;}
+.fa-door-closed, .fa-door-open {top: 220px; right: 15px;}
 
-.fa-angle-left {
+/* .fa-angle-left {
     top: 50%; 
     right: 90%; 
     transform: translate(-50%, -50%); 
     background-color: rgba(0, 0, 0, 0.652);
-
-}
+} */
 
 #first, #firstV, #second, #secondV, #third, #thirdV, #fourth, #fourthV, #fifth, #fifthV {
     background-color: rgba(177, 219, 255, 0.8);
@@ -88,3 +92,5 @@ nav {
 #fifth, #fifthV {top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .hidden {opacity: 0;}
 .showing {opacity: 1;}
+
+
