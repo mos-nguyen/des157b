@@ -1,0 +1,80 @@
+body {
+    background-image: url(images/space_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+img {
+    position: absolute;
+}
+
+#drop-zone, #alien {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#drop-zone {
+    width: 370px;
+    height: 645px;
+}
+
+#hat-zone {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#misc-zone {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+}
+
+#main-zone {
+    width: 400px;
+    height: 650px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+} 
+
+#boots-zone {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+header, footer{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+a {
+    position: absolute;
+    z-index: 1;
+}
+
+#headband { top: 20px; right: 20px; }
+#green-hat { top: 20px; right: 150px; }
+#bow { top: 20px; right: 250px; }
+
+#purple-boots { bottom: 20px; right: 20px; }
+#green-boots { bottom: 130px; right: 20px; }
+#pink-boots { bottom: 300px; right: 20px; }
+
+#purple-misc { top: 100px; right: 280px; }
+#green-misc { top: 100px; right: 120px;}
+
+#purple-main { bottom: 20px; left: 20px;}
+#green-main { bottom: 300px; left: 20px;}
+#pink-main { bottom: 400px; left: 50px;}
