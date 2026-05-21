@@ -11,6 +11,7 @@
     const next = document.querySelector('#next');
     const openInventory = document.querySelector('.fa-briefcase');
     const inventory = document.querySelector('#inventory');
+    const p = document.querySelector('#inventory p')
     const zero = document.querySelector('#zero');
     const one = document.querySelector('#one');
     const two = document.querySelector('#two');
@@ -32,7 +33,7 @@
         inventory.className='open';
     });
 
-    inventory.addEventListener('click', function() {
+    p.addEventListener('click', function() {
         inventory.classList.remove('.open')
         inventory.className='done';
     })
