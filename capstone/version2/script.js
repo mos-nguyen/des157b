@@ -1,7 +1,7 @@
 (function () {
 
     'use strict'
-    console.log('reading js')
+    console.log('reading js');
 
     const go = document.querySelector('#continue');
     const overlay = document.querySelector('#overlay');

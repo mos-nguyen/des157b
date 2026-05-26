@@ -56,23 +56,6 @@ div p {
     transform: translate(-50%, 0);
 }
 
-/* #overlay img {
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-} */
-
-/* #overlay p {
-    width: 530px;
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-30%, 0);
-    font-family: "Courier Prime", monospace;
-    font-size: 12px;
-} */
-
 #continue{
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
@@ -113,32 +96,34 @@ div p {
 .fa-solid:hover {
     transform: scale(110%);
 }
+/* --------------------------------------------------------------------------- */
 
-#text {
-    background-color: rgb(225, 225, 219);
+#box {
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 1000px;
+    width: 80%;
     height: 150px;
-    z-index: -1;
+    background-color: antiquewhite;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 0);
 }
 
-#next {
-    background-color: rgba(255, 255, 255, 0);
+button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     font-family: "Courier Prime", monospace;
     font-size: 30px;
-    position: absolute;
     bottom: 10px;
     right: 10px;
 }
 
-#text p {
+#box p {
     font-family: "Courier Prime", monospace;
-    margin: 15px;
-    font-size: 15px;
+    font-size: 20px;
+    margin: 20px;
+    width: 900px;
+    z-index: -1;
 }
 
 #fox {
@@ -146,14 +131,8 @@ div p {
     left: 0px;
     bottom: 0px;
     z-index: -2;
-    /* scale: 90%; */
 }
 
-#bun {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-}
 
 
 
