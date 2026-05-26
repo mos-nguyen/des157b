@@ -29,18 +29,23 @@
         // console.log('werk');
         inventory.classList.remove('.done')
         inventory.className='open';
+        box.className='done';
     });
 
     const inventory = document.querySelector('#inventory');
-    const p = document.querySelector('#inventory p')
+    const close = document.querySelector('#inventory p')
 
-    p.addEventListener('click', function() {
+    close.addEventListener('click', function() {
         inventory.classList.remove('.open')
         inventory.className='done';
+        box.classList.remove('.done');
+        box.className='open';
+
     })
 
     const next = document.querySelector('#next');
-    const box  = document.querySelector('#box p');
+    const box = document.querySelector('#box')
+    const boxText  = document.querySelector('#box p');
     const textBank = {
         newText: [
             'does this work?',
