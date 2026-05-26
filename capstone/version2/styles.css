@@ -1,8 +1,23 @@
 body {
-    background-image: url(images/Bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
 }
+
+#bg {
+    height: 750px;
+    width: 1200px;
+    background-image: url(images/Bg.svg);
+    position: relative;
+    z-index: 1;
+}
+
+#container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+/* ---------------------------------------------------------------------------------- */
 
 #overlay {
     position: fixed;
@@ -40,11 +55,27 @@ div p {
 
 /* ---------------------------------------------------------------------------------- */
 
+#inventory {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.744);
+    height: 750px;
+    width: 1200px;
+    z-index: 4;
+}
+
+#inventory img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #inventory p {
     position: absolute;
     color: red;
     font-family: "Courier Prime", monospace;
     font-size: 30px;
+    bottom: 0px;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -59,7 +90,7 @@ div p {
     font-size: 30px;
 }
 
-#continue:hover, #inventory p:hover {
+#continue:hover {
     transform: scale(110%);
 }
 
@@ -100,6 +131,7 @@ div p {
     left: 50%;
     bottom: 0px;
     transform: translate(-50%, 0);
+    z-index: 3;
 }
 
 button {
@@ -124,7 +156,7 @@ button {
     position: absolute;
     left: 0px;
     bottom: 0px;
-    z-index: -2;
+    z-index: 2;
 }
 
 
