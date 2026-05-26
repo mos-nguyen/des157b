@@ -11,7 +11,32 @@ body {
     top: 0;
     left: 0;
     background-color: rgb(0, 0, 0);
+    z-index: 1;
 }
+
+Main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+div {
+    background-color: aliceblue;
+    width: 600px;
+    height: 160px;
+}
+
+div p {
+    font-family: "Courier Prime", monospace;
+    font-size: 20px;
+    margin: 0px;
+    padding: 20px;
+}
+
+#top, #bottom {transform: skew(-15deg);}
+#middle {transform: skew(15deg);}
 
 /* #inventory {
     background-image: url(images/bagtemp.svg);
@@ -31,14 +56,14 @@ body {
     transform: translate(-50%, 0);
 }
 
-#overlay img {
+/* #overlay img {
     position: relative;
     top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
-}
+} */
 
-#overlay p {
+/* #overlay p {
     width: 530px;
     position: absolute;
     top: 22%;
@@ -46,18 +71,15 @@ body {
     transform: translate(-30%, 0);
     font-family: "Courier Prime", monospace;
     font-size: 12px;
-}
+} */
 
 #continue{
     position: absolute;
-    top: 600px;
-    left: 750px;
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);
     color: red;
     font-family: "Courier Prime", monospace;
     font-size: 30px;
-
 }
 
 #continue:hover, #inventory p:hover {
