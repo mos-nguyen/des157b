@@ -4,27 +4,25 @@
     console.log('reading js');
 
     const go = document.querySelector('#continue');
-    const overlay = document.querySelector('#overlay');
-    const envelope = document.querySelector('.fa-envelope');
-    const portal = document.querySelector('.fa-door-closed');
-    const text = document.querySelector('#text');
-    // const next = document.querySelector('#next');
-    const openInventory = document.querySelector('.fa-briefcase');
-    const inventory = document.querySelector('#inventory');
-    const p = document.querySelector('#inventory p')
-    const zero = document.querySelector('#zero');
-    const one = document.querySelector('#one');
-    const two = document.querySelector('#two');
-
 
     go.addEventListener('click', function() {
         // console.log('werk')
         overlay.className='done';
-        text.className='open';
+        // text.className='open';
     });
+
+    const envelope = document.querySelector('.fa-envelope');
+    const portal = document.querySelector('.fa-door-closed');
+    const openInventory = document.querySelector('.fa-briefcase');
+
     envelope.addEventListener('click', function() {
         overlay.classList.remove('.done')
         overlay.className='open';
+    })
+
+    portal.addEventListener('click', function() {
+        // console.log('werk')
+        window.location.href = 'https://mos-nguyen.github.io/des157b/'
     })
 
     openInventory.addEventListener('click', function() {
@@ -33,30 +31,27 @@
         inventory.className='open';
     });
 
+    const inventory = document.querySelector('#inventory');
+    const p = document.querySelector('#inventory p')
+
     p.addEventListener('click', function() {
         inventory.classList.remove('.open')
         inventory.className='done';
     })
 
-    portal.addEventListener('click', function() {
-        // console.log('werk')
-        window.location.href = 'https://mos-nguyen.github.io/des157b/'
-    })
-
-    // next.addEventListener('click', function() {
-    //     // console.log('werk')
-    //     zero.className='done'
-    //     one.classList.remove('.done')
-    //     one.className='open'
-    // })
-
-//----------------------------
     const next = document.querySelector('#next');
+    const box  = document.querySelector('#box p');
+    const textBank = {
+        newText: [
+            'does this work?',
+            'How about this one?',
+            'This is another one.'
+        ]
+    }
 
     next.addEventListener('click', function() {
-        console.log('werk');
-
-    })
-
+        console.log('testing');
+        box.innerHTML = `<p>${textBank.newText[0]}</p>`
+    }) 
 
 })();

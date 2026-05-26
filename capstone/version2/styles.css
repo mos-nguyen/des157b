@@ -38,13 +38,7 @@ div p {
 #top, #bottom {transform: skew(-15deg);}
 #middle {transform: skew(15deg);}
 
-/* #inventory {
-    background-image: url(images/bagtemp.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 750px;
-} */
+/* ---------------------------------------------------------------------------------- */
 
 #inventory p {
     position: absolute;
