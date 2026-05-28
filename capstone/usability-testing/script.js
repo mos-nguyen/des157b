@@ -39,7 +39,7 @@
     })
 // ----------------------------------------------------------------------------------------
     const next = document.querySelector('#next');
-    const box = document.querySelector('#box')
+    const box = document.querySelector('#box');
     const boxText  = document.querySelector('#box #text');
 
     let textIndex = 0;
@@ -78,6 +78,14 @@
             // next.innerHTML = '<button id="next">Done</button>'
         }
     })   
+
+    back.addEventListener('click', function() {
+        const back = document.querySelector('#back');
+        if (textIndex > textBank.newText[2]) {
+            console.log('back');
+        } 
+
+    })
 // ---------------------------------------------------------------------------------------
     bun.addEventListener('click', function () {
         const bun = document.querySelector('#bun');
