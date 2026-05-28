@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Name: Version 2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- font-family: "Courier Prime", monospace; -->
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    
+<!-- ----------------------------------------------------------------------------------------------- -->
+    
+    <div id="container">
+        <section id="bg">
+            <section id="menu">
+                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-door-closed"></i>
+                <!-- <i class="fa-solid fa-arrow-left"></i> -->
+            </section>
+            <div id="inventory" class="done">
+                <img src="images/bagtemp.svg">
+                <img id="evidence1" class="done" src="images/Bun.png">
+                <p>Click Here to Exit</p>
+            </div>
+
+            <img id="fox" src="images/Fox.svg">
+            <img id="cat" src="images/Cat.svg">
+
+            <section id="box">
+                <!-- <p id="foxName">Detective Fennek</p>
+                <p id="catName" class="done">Talia</p> -->
+                <p id="text"><strong>Detective Fennek</strong><br>You there. What's your name?</p>
+                <button id="next">Next</button>
+            </section> 
+
+            <img id="bun" src="images/Bun.png">
+
+        </section>
+    </div>
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+    <div id="overlay">
+        <img id="letter" src="images/letter.svg">
+        <main>
+            <div id="top">
+                <p>Dear Detective Fennek,<br><br>There's been <s>a murder</s> an unaliving in the alley of Wraung Way. Although the crime scene isn't complete, there are a couple things you need to accomplish.</p>
+                
+            </div>
+
+            <div id="middle">
+                <p>1. Have a conversation with one of the witnesses.<br>
+                2. Find potential evidence to collect. <br>
+                3. Open your briefcase to make sure the evidence is there.</p>
+            </div>
+
+            <div id="bottom">
+                <p>This crime scene is incomplete. Do your best work detective.<br><br>Sincerly,<br>Sylvia Moore</p>
+            </div>
+
+            <button id="continue">Continue...</button>
+        </main>
+    </div>
+
+</body>
+
+</html>

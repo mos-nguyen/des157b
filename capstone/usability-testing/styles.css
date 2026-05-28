@@ -1,0 +1,203 @@
+body {
+    background-color: black;
+}
+
+#bg {
+    height: 750px;
+    width: 1200px;
+    background-image: url(images/Bg.svg);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+/* ---------------------------------------------------------------------------------- */
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+Main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+div {
+    background-color: aliceblue;
+    width: 600px;
+    height: 160px;
+}
+
+#overlay p {
+    font-family: "Courier Prime", monospace;
+    font-size: 20px;
+    margin: 0px;
+    padding: 20px;
+}
+
+#top, #bottom {transform: skew(-15deg);}
+#middle {transform: skew(15deg);}
+
+#top {box-shadow: 4px -24px 38.7px 0 rgba(0, 0, 0, 0.288) inset;}
+#bottom {box-shadow: 0 17px 104.9px 0 rgba(0, 0, 0, 0.25) inset;}
+
+#letter {
+    position: absolute;
+    top: -50px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+#inventory {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.744);
+    height: 750px;
+    width: 1200px;
+    z-index: 4;
+}
+
+#inventory img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#inventory p {
+    position: absolute;
+    color: red;
+    font-family: "Courier Prime", monospace;
+    font-size: 30px;
+    bottom: 0px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#inventory #evidence1 {
+    position: absolute;
+    top: 200px;
+    left: 260px;
+}
+
+#continue{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    color: red;
+    font-family: "Courier Prime", monospace;
+    font-size: 30px;
+    left: 30px;
+}
+
+#continue:hover {
+    transform: scale(110%);
+}
+
+.done {visibility: hidden; height: 0px;} 
+.show {visibility: visible;}
+
+#menu {
+    position: absolute;
+    background-color: rgb(38, 40, 42);
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    top: 10px;
+    right: 10px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid {
+    color: red;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+
+.fa-solid:hover {
+    transform: scale(110%);
+}
+/* --------------------------------------------------------------------------- */
+
+#box {
+    position: absolute;
+    width: 80%;
+    height: 150px;
+    background-color: rgb(255, 252, 249);
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 0);
+    z-index: 3;
+}
+
+button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: "Courier Prime", monospace;
+    font-size: 30px;
+    bottom: 10px;
+    right: 10px;
+}
+
+#box p {
+    font-family: "Courier Prime", monospace;
+    font-size: 20px;
+    margin: 10px;
+    width: 800px;
+    z-index: -1;
+}
+
+#box #foxName, #catName {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#fox {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+#cat {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+#bun {
+    position: absolute;
+    right: 520px;
+    top: 242px;
+}
+
+#bun:hover {
+    scale: 120%;
+}
+
+
+
+
+
