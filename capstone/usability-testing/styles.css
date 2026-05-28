@@ -191,11 +191,34 @@ button {
     position: absolute;
     right: 520px;
     top: 242px;
+    animation-duration: 3s;
+    /* animation-name: schwoop; */
+    /* animation-play-state: paused; */
+}
+
+#bun.animate {
+    animation: fade-in 2s ease-in;
+    animation-name: schwoop;
 }
 
 #bun:hover {
     scale: 120%;
 }
+
+@keyframes schwoop {
+    from {
+        top: 242px;
+        right: 520px;
+    }
+
+    to {
+        top: 0px;
+        right: 160px;
+        scale: 50%;
+    }
+}
+
+
 
 
 

@@ -83,7 +83,8 @@
         const bun = document.querySelector('#bun');
         const evidence1 = document.querySelector('#evidence1');
         evidence1.classList.remove('.done');
-        evidence1.className = 'open'
+        evidence1.className = 'open';
+        bun.classList.add('animate');
     })
 
 })();
