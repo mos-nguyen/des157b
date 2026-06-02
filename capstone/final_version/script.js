@@ -41,6 +41,7 @@
     const next = document.querySelector('#next');
     const box = document.querySelector('#box');
     const boxText  = document.querySelector('#box #text');
+    const finish = document.querySelector('#finish')
 
     let textIndex = 0;
 
@@ -75,9 +76,15 @@
         textIndex ++
         } else {
             next.style.display='none';
+            finish.className = 'open';
             // next.innerHTML = '<button id="next">Done</button>'
         }
     })   
+
+    finish.addEventListener('click', function() {
+        const witness = document.querySelector('#witness');
+        witness.className = 'done'
+    })
 // ---------------------------------------------------------------------------------------
     const info = document.querySelector('#info')
 
