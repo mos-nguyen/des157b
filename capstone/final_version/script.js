@@ -85,6 +85,8 @@
 
     finish.addEventListener('click', function() {
         witness.className = 'done'
+        evidence3.classList.remove('.done');
+        evidence3.className = 'open';
     })
 
     speak.addEventListener('click', function() {
@@ -99,8 +101,14 @@
         evidence1.classList.remove('.done');
         evidence1.className = 'open';
         bun.classList.add('animate');
-        
     })
+
+    hammer.addEventListener('click', function() {
+        const hammer = document.querySelector('#hammer');
+        evidence2.classList.remove('.done');
+        evidence2.className = 'open';
+    })
+
 
     evidence1.addEventListener('click', function () {
         const evidence1 = document.querySelector('#evidence1');
@@ -114,6 +122,13 @@
         info.classList.remove('done');
         info.className = 'open'
         info.innerHTML = '<p>The murder weapon, I presume. its covered in something...blood maybe? I could check but it might lower my reputation.</p>'
+    })
+
+    evidence3.addEventListener('click', function() {
+        const evidence3 = document.querySelector('#evidence3')
+        info.classList.remove('done');
+        info.className = 'open'
+        info.innerHTML = '<p>Talias witness report. she claims to have nothing to do with the victim.</p>'
     })
 
 })();
