@@ -42,6 +42,8 @@
     const box = document.querySelector('#box');
     const boxText  = document.querySelector('#box #text');
     const finish = document.querySelector('#finish')
+    const speak = document.querySelector('#temp')
+    const witness = document.querySelector('#witness');
 
     let textIndex = 0;
 
@@ -82,9 +84,13 @@
     })   
 
     finish.addEventListener('click', function() {
-        const witness = document.querySelector('#witness');
         witness.className = 'done'
     })
+
+    speak.addEventListener('click', function() {
+        witness.className = 'open'; 
+    })
+    
 // ---------------------------------------------------------------------------------------
     const info = document.querySelector('#info')
 
