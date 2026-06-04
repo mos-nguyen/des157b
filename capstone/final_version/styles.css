@@ -164,10 +164,22 @@ div {
 
 #witness {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.722);
     height: 750px;
     width: 1200px;
     z-index: 2;
+}
+
+#witness.animate {
+    animation-name: bgf;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bgf {
+    from {background-color: rgba(0, 0, 0, 0);}
+
+    to {background-color: rgba(0, 0, 0, 0.722);}
 }
 
 #box {
@@ -201,16 +213,33 @@ button {
     z-index: -1;
 }
 
-#box #foxName, #catName {
+/* #box #foxName, #catName {
     font-weight: bold;
     font-size: 25px;
-}
+} */
 
 #fox {
     position: absolute;
     left: 0px;
     bottom: 0px;
     z-index: 2;
+    
+}
+
+#fox.animate {
+    animation-name: schloop;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes schloop {
+    from {
+        left: -600px;
+    }
+
+    to {
+        left: 0px;
+    }
 }
 
 #cat {
@@ -245,6 +274,7 @@ button {
         scale: 50%;
     }
 }
+
 
 
 

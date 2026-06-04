@@ -91,10 +91,13 @@
 
     speak.addEventListener('click', function() {
         witness.className = 'open'; 
+        witness.classList.add('animate')
+        fox.className = 'animate';
     })
     
 // ---------------------------------------------------------------------------------------
     const info = document.querySelector('#info')
+    const fox = document.querySelector('#fox')
 
     bun.addEventListener('click', function () {
         const bun = document.querySelector('#bun');
