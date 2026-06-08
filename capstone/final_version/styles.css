@@ -11,6 +11,12 @@ body {
     z-index: 1;
 }
 
+#trash {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
 #container {
     display: grid;
     place-items: center;
@@ -100,8 +106,9 @@ div {
 
 #inventory #evidence1 {
     position: absolute;
-    top: 200px;
-    left: 260px;
+    top: 180px;
+    left: 250px;
+    scale: 80%;
 }
 
 #inventory #evidence2 {
@@ -111,10 +118,50 @@ div {
 }
 
 #inventory #evidence3 {
-    scale: 60%;
+    scale: 100%;
     position: absolute;
-    top: 140px;
-    left: 580px;
+    top: 370px;
+    left: 260px;
+}
+
+#inventory #evidence4 {
+    scale: 75%;
+    position: absolute;
+    top: 180px;
+    left: 600px;
+}
+
+#inventory #evidence5 {
+    scale: 100%;
+    position: absolute;
+    top: 180px;
+    left: 600px;
+}
+
+#inventory #evidence6 {
+    scale: 150%;
+    position: absolute;
+    top: 400px;
+    left: 275px;
+}
+
+#inventory #evidence7 {
+    scale: 150%;
+    position: absolute;
+    top: 400px;
+    left: 275px;
+}
+
+#inventory #evidence8 {
+    position: absolute;
+    top: 370px;
+    left: 450px;
+}
+
+#inventory #evidence9 {
+    position: absolute;
+    top: 370px;
+    left: 625px;
 }
 
 #continue{
@@ -161,16 +208,34 @@ div {
     transform: scale(110%);
 }
 /* --------------------------------------------------------------------------- */
-
-#witness {
+#cattalk {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.722);
+    top: 150px;
+    right: 30px;
+}
+
+#guiltytalk {
+    position: absolute;
+    top: 270px;
+    right: 30px;
+}
+
+#mousetalk {
+    position: absolute;
+    top: 390px;
+    right: 30px;
+}
+
+
+#cattext, #guiltytext, #mousetext {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.904);
     height: 750px;
     width: 1200px;
     z-index: 2;
 }
 
-#witness.animate {
+#cattext.animate, #guiltytext.animate, #mousetext.animate {
     animation-name: bgf;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -179,10 +244,10 @@ div {
 @keyframes bgf {
     from {background-color: rgba(0, 0, 0, 0);}
 
-    to {background-color: rgba(0, 0, 0, 0.722);}
+    to {background-color: rgba(0, 0, 0, 0.904);}
 }
 
-#box {
+#box, #gbox, #mbox {
     position: absolute;
     width: 80%;
     height: 150px;
@@ -205,7 +270,7 @@ button {
 
 #back {left: 0; width: 30px;}
 
-#box p {
+#box p, #gbox p, #mbox p {
     font-family: "Courier Prime", monospace;
     font-size: 20px;
     margin: 10px;
@@ -213,12 +278,7 @@ button {
     z-index: -1;
 }
 
-/* #box #foxName, #catName {
-    font-weight: bold;
-    font-size: 25px;
-} */
-
-#fox {
+#fox, #gfox, #mfox {
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -226,7 +286,7 @@ button {
     
 }
 
-#fox.animate {
+#fox.animate, #gfox.animate, #mfox.animate {
     animation-name: schloop;
     animation-duration: 2s;
     animation-timing-function: ease-out;
@@ -235,42 +295,62 @@ button {
 @keyframes schloop {
     from {
         left: -600px;
+        opacity: 0%;
     }
 
     to {
         left: 0px;
+        opacity: 100%;
     }
 }
 
-#cat {
+#cat, #guilty, #mouse {
     position: absolute;
     right: 0px;
     bottom: 0px;
     z-index: 2;
 }
 
-#bun {
-    position: absolute;
-    right: 520px;
-    top: 242px;
+#cat.animate, #guilty.animate, #mouse.animate {
+    animation-name: catmove;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
-#bun.animate {
+@keyframes catmove {
+    from {
+        right: -600px;
+        opacity: 0%;
+    }
+
+    to {
+        right: 0px;
+        opacity: 100%;
+    }
+}
+
+#deadbun {
+    position: absolute;
+    left: 170px;
+    bottom: 165px;
+}
+
+#deadbun.animate {
     animation: fade-in 1.5s ease-out;
     animation-name: schwoop;
 }
 
-#bun:hover {scale: 120%;}
+#deadbun:hover {scale: 120%;}
 
 @keyframes schwoop {
     from {
-        top: 242px;
-        right: 520px;
+        left: 170px;
+        bottom: 165px;
     }
 
     to {
-        top: 0px;
-        right: 210px;
+        left: 850px;
+        bottom: 600px;
         scale: 50%;
     }
 }
