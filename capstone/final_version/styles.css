@@ -40,7 +40,7 @@ body {
     z-index: 1;
 }
 
-Main {
+Main, #norepeat {
     position: absolute;
     left: 50%;
     top: 50%;
