@@ -2,9 +2,11 @@
 h1, h2, h3, h4, p, nav ul {
     padding: 0;
     margin: 0;
+    font-family: "Courier Prime", monospace;
 }
 h1, h2, h3, h4 {
     color: red;
+    /* font-family: "Courier Prime", monospace; */
 }
 nav ul {
     list-style-type: none;
@@ -50,6 +52,11 @@ section:nth-child(even){
 
 .container {
     max-width: 1000px;
+}
+
+.container div #explain {
+    width: 1000px;
+    text-align: center;
 }
 
 h1, h2 {
