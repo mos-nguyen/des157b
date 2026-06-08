@@ -355,6 +355,36 @@ button {
     }
 }
 
+#blood {
+    position: absolute;
+    left: 120px;
+    bottom: 147px;
+}
+
+#hammer {
+    position: absolute;
+    bottom: 170px;
+    left: 350px;
+}
+
+#wallet {
+    position: absolute;
+    bottom: 80px;
+    left: 150px;
+}
+
+#foot {
+    position: absolute;
+    bottom: 10px;
+    left: 340px;
+}
+
+#scissors {
+    position: absolute;
+    bottom: 215px;
+    right: 390px;
+}
+
 
 
 
