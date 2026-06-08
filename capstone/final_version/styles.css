@@ -79,12 +79,42 @@ div {
     z-index: 4;
 }
 
-#inventory img {
+#inventory #table {
+    width: 906px;
+    height: 596px;
+    background-color: #D9D9D9;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#inventory #one, #inventory #two, #inventory #three, #inventory #four, #inventory #five, #inventory #six, #inventory #seven, #inventory #eight, #inventory #nine {
+    width: 170px;
+    height: 170px;
+    background-color: #A6A6A6;
+    position: absolute;
+}
+#inventory #one, #inventory #two, #inventory #three {top: 112px; background-color: black;}
+#inventory #four, #inventory #five, #inventory #six {top: 300px; background-color: red;}
+#inventory #seven, #inventory #eight, #inventory #nine {top: 490px; background-color: black;}
+
+#inventory #one, #inventory #four, #inventory #seven {left: 170px;}
+#inventory #two, #inventory #five, #inventory #eight {left: 360px;}
+#inventory #three, #inventory #six, #inventory #nine {left: 550px;}
+
+#dropevidence, #dropsuspect {
+    font-family: "Courier Prime", monospace;
+    width: 136px;
+    height: 170px;
+    position: absolute;
+    top: 95px;
+    align-content: center;
+    text-align: center;
+}
+
+#dropevidence {background-color: black; color: red; right: 320px;}
+#dropsuspect {background-color: red; color: black;right: 175px;}
 
 #exit {
     position: absolute;
@@ -98,6 +128,7 @@ div {
 
 #info {
     position: absolute;
+    color: black;
     font-family: "Courier Prime", monospace;
     width: 250px;
     top: 290px;
@@ -106,62 +137,62 @@ div {
 
 #inventory #evidence1 {
     position: absolute;
-    top: 180px;
-    left: 250px;
+    top: 100px;
+    left: 170px;
     scale: 80%;
 }
 
 #inventory #evidence2 {
     position: absolute;
-    top: 200px;
-    left: 450px;
+    top: 150px;
+    left: 400px;
 }
 
 #inventory #evidence3 {
     scale: 100%;
     position: absolute;
-    top: 370px;
-    left: 260px;
+    top: 320px;
+    left: 200px;
 }
 
 #inventory #evidence4 {
     scale: 75%;
     position: absolute;
-    top: 180px;
-    left: 600px;
+    top: 120px;
+    left: 530px;
 }
 
 #inventory #evidence5 {
     scale: 150%;
     position: absolute;
-    top: 580px;
-    left: 265px;
+    top: 550px;
+    left: 225px;
 }
 
 #inventory #evidence6 {
     scale: 50%;
     position: absolute;
-    top: 475px;
-    left: 380px;
+    top: 415px;
+    left: 340px;
 }
 
 #inventory #evidence7 {
     scale: 130%;
     position: absolute;
     top: 550px;
-    left: 640px;
+    left: 600px;
 }
 
 #inventory #evidence8 {
     position: absolute;
-    top: 370px;
-    left: 450px;
+    top: 300px;
+    left: 380px;
 }
 
 #inventory #evidence9 {
     position: absolute;
-    top: 370px;
-    left: 625px;
+    top: 320px;
+    left: 560px;
 }
 
 #continue{
@@ -365,10 +396,12 @@ button {
     right: 390px;
 }
 
-#deadbun.animate {
-    animation: fade-in 1.5s ease-out;
-    animation-name: schwoop;
-}
+#deadbun.animate {animation: fade-in 1.5s ease-out;animation-name: schwoop;}
+#blood.animate {animation: fade-in 1.5s ease-out;animation-name: blood;}
+#hammer.animate {animation: fade-in 1.5s ease-out;animation-name: hammer;}
+#wallet.animate {animation: fade-in 1.5s ease-out;animation-name: wallet;}
+#foot.animate {animation: fade-in 1.5s ease-out;animation-name: foot;}
+#scissors.animate {animation: fade-in 1.5s ease-out;animation-name: scissors;}
 
 #deadbun:hover, #cattalk:hover, #guiltytalk:hover, #mousetalk:hover, #blood:hover, #hammer:hover, #wallet:hover, #foot:hover, #scissors:hover {scale: 120%;}
 
@@ -382,6 +415,68 @@ button {
         left: 850px;
         bottom: 600px;
         scale: 50%;
+    }
+}
+
+@keyframes blood {
+    from {
+        left: 120px;
+        bottom: 147px;
+    }
+
+    to {
+        left: 850px;
+        bottom: 600px;
+        scale: 50%;
+    }
+}
+
+@keyframes hammer {
+    from {
+        bottom: 170px;
+        left: 350px;
+    }
+
+    to {
+        left: 950px;
+        bottom: 680px;
+    }
+}
+
+@keyframes foot {
+    from {
+        bottom: 10px;
+        left: 340px;
+    }
+
+    to {
+        left: 900px;
+        bottom: 650px;
+        scale: 50%;
+    }
+}
+
+@keyframes wallet {
+    from {
+        bottom: 80px;
+        left: 150px;
+    }
+
+    to {
+        left: 950px;
+        bottom: 680px;
+    }
+}
+
+@keyframes scissors {
+    from {
+        bottom: 215px;
+        right: 390px;
+    }
+
+    to {
+        right: 180px;
+        bottom: 680px;
     }
 }
 

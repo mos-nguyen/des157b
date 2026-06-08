@@ -17,6 +17,8 @@
     <link href="styles.css" rel="stylesheet">
 
     <script src="script.js" defer></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable/build/umd/index.min.js"></script>
 </head>
 
 <body>
@@ -33,7 +35,17 @@
             </section>
 
             <div id="inventory" class="done">
-                <img src="images/bagtemp.svg">
+                <!-- <img src="images/bagtemp.svg"> -->
+                <div id="table"></div>
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+                <div id="eight"></div>
+                <div id="nine"></div>
                 <img id="evidence1" class="done" src="images/deadbun.svg">
                 <img id="evidence2" class="done" src="images/hammer.svg">
                 <img id="evidence3" class="done" src="images/evidence3.svg">
@@ -43,8 +55,10 @@
                 <img id="evidence7" class="done" src="images/scissors.svg">
                 <img id="evidence8" class="done" src="images/evidence8.svg">
                 <img id="evidence9" class="done" src="images/evidence9.svg">
+                <p id="dropevidence" class="dropzone">Drop Evidence Here</p>
+                <p id="dropsuspect" class="dropzone">Drop Suspect Here</p>
                 <p id="exit">Click Here to Exit</p>
-                <p id="info" class="done"></p>
+                <p id="info" class="open">Click on evidence for information. Hold to drag evidence.</p>
             </div>
 <!-- ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc -->
             <section id="cattext" class="done">
@@ -100,7 +114,8 @@
         <img id="letter" src="images/letter.svg">
         <main>
             <div id="top">
-                <p>Dear Detective Fennek,<br><br>There's been <s>a murder</s> an unaliving in the alley of Wraung Way. Although the crime scene isn't complete, there are a couple things you need to accomplish.</p>
+                <!-- <p>Dear Detective Fennek,<br><br>There's been <s>a murder</s> an unaliving in the alley of Wraung Way. Although the crime scene isn't complete, there are a couple things you need to accomplish.</p> -->
+                 <p>Dear Detective Fennek,<br><br>There's been a murder in the alley of Wraung Way. </p>
                 
             </div>
 

@@ -31,7 +31,7 @@
 
 // ----------------------------------------------------------------------------------------
     const inventory = document.querySelector('#inventory');
-    const close = document.querySelector('#inventory p')
+    const close = document.querySelector('#inventory #exit')
 
     close.addEventListener('click', function() {
         inventory.classList.remove('.open')
@@ -185,30 +185,35 @@
         const hammer = document.querySelector('#hammer');
         evidence2.classList.remove('.done');
         evidence2.className = 'open';
+        hammer.classList.add('animate');
     })
 
     foot.addEventListener('click', function() {
         const foot = document.querySelector('#foot');
         evidence4.classList.remove('.done');
         evidence4.className = 'open';
+        foot.classList.add('animate');
     })
 
     wallet.addEventListener('click', function() {
         const wallet = document.querySelector('#wallet');
         evidence5.classList.remove('.done');
         evidence5.className = 'open';
+        wallet.classList.add('animate');
     })
 
     blood.addEventListener('click', function() {
         const blood = document.querySelector('#blood');
         evidence6.classList.remove('.done');
         evidence6.className = 'open';
+        blood.classList.add('animate');
     })
 
     scissors.addEventListener('click', function() {
         const scissors = document.querySelector('#scissors');
         evidence7.classList.remove('.done');
         evidence7.className = 'open';
+        scissors.classList.add('animate');
     })
 
 
@@ -275,4 +280,7 @@
         info.innerHTML = 'aaaa  aa aa aaaa aaaa aaa aa a a a   a aaa aaa a aaaa a aaa a a a a  aa a a</p>'
     })
 
+    const draggable = new Draggable.Draggable(document.querySelectorAll('#inventory img'), {
+        draggable: '.open',
+    });
 })();
