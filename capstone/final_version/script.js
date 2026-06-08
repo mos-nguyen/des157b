@@ -28,6 +28,7 @@
         inventory.classList.remove('.done')
         inventory.className='open';
     });
+
 // ----------------------------------------------------------------------------------------
     const inventory = document.querySelector('#inventory');
     const close = document.querySelector('#inventory p')
@@ -196,6 +197,18 @@
         const wallet = document.querySelector('#wallet');
         evidence5.classList.remove('.done');
         evidence5.className = 'open';
+    })
+
+    blood.addEventListener('click', function() {
+        const blood = document.querySelector('#blood');
+        evidence6.classList.remove('.done');
+        evidence6.className = 'open';
+    })
+
+    scissors.addEventListener('click', function() {
+        const scissors = document.querySelector('#scissors');
+        evidence7.classList.remove('.done');
+        evidence7.className = 'open';
     })
 
 

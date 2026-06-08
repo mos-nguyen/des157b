@@ -132,24 +132,24 @@ div {
 }
 
 #inventory #evidence5 {
-    scale: 100%;
+    scale: 150%;
     position: absolute;
-    top: 180px;
-    left: 600px;
+    top: 580px;
+    left: 265px;
 }
 
 #inventory #evidence6 {
-    scale: 150%;
+    scale: 50%;
     position: absolute;
-    top: 400px;
-    left: 275px;
+    top: 475px;
+    left: 380px;
 }
 
 #inventory #evidence7 {
-    scale: 150%;
+    scale: 130%;
     position: absolute;
-    top: 400px;
-    left: 275px;
+    top: 550px;
+    left: 640px;
 }
 
 #inventory #evidence8 {
@@ -185,7 +185,7 @@ div {
     position: absolute;
     background-color: rgb(38, 40, 42);
     box-shadow: -3px 6px 11.8px 4px rgba(0, 0, 0, 0.49);
-    width: 300px;
+    width: 250px;
     height: 60px;
     border-radius: 10px;
     top: 10px;
@@ -335,26 +335,6 @@ button {
     bottom: 165px;
 }
 
-#deadbun.animate {
-    animation: fade-in 1.5s ease-out;
-    animation-name: schwoop;
-}
-
-#deadbun:hover {scale: 120%;}
-
-@keyframes schwoop {
-    from {
-        left: 170px;
-        bottom: 165px;
-    }
-
-    to {
-        left: 850px;
-        bottom: 600px;
-        scale: 50%;
-    }
-}
-
 #blood {
     position: absolute;
     left: 120px;
@@ -385,7 +365,25 @@ button {
     right: 390px;
 }
 
+#deadbun.animate {
+    animation: fade-in 1.5s ease-out;
+    animation-name: schwoop;
+}
 
+#deadbun:hover, #cattalk:hover, #guiltytalk:hover, #mousetalk:hover, #blood:hover, #hammer:hover, #wallet:hover, #foot:hover, #scissors:hover {scale: 120%;}
+
+@keyframes schwoop {
+    from {
+        left: 170px;
+        bottom: 165px;
+    }
+
+    to {
+        left: 850px;
+        bottom: 600px;
+        scale: 50%;
+    }
+}
 
 
 
