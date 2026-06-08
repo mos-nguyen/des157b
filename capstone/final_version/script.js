@@ -4,10 +4,26 @@
     console.log('reading js');
 
     const go = document.querySelector('#continue');
+    const again = document.querySelector('#restart')
+    const back = document.querySelector('#back')
+    const bottom = document.querySelector('#bottomend')
+    const reveal = document.querySelector('#reveal')
 
     go.addEventListener('click', function() {
         overlay.className='done';
     });
+
+    again.addEventListener('click', function() {
+        window.location.reload();
+    })
+
+    back.addEventListener('click', function() {
+        end.className='done';
+    });
+
+    bottom.addEventListener('click', function() {
+        reveal.classList.remove('done')
+    })
 // ----------------------------------------------------------------------------------------
     const envelope = document.querySelector('.fa-envelope');
     const portal = document.querySelector('.fa-door-closed');

@@ -73,6 +73,10 @@ div {
     transform: translate(-50%, -50%);
 }
 
+strong {
+    color: red;
+}
+
 /* ---------------------------------------------------------------------------------- */
 
 #inventory {
@@ -208,7 +212,7 @@ div {
     left: 560px;
 }
 
-#continue{
+#continue, #restart, #back {
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);
@@ -216,9 +220,10 @@ div {
     font-family: "Courier Prime", monospace;
     font-size: 30px;
     left: 30px;
+    bottom: -50px;
 }
 
-#continue:hover {
+#continue:hover, #restart:hover, #back:hover {
     transform: scale(110%);
 }
 
@@ -252,9 +257,9 @@ div {
     transform: scale(110%);
 }
 
-.fa-eye-slash {
+/* .fa-eye-slash {
     color: rgb(83, 0, 0);
-}
+} */
 /* --------------------------------------------------------------------------- */
 #cattalk {
     position: absolute;
